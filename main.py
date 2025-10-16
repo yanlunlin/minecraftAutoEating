@@ -37,7 +37,7 @@ while True:
 
     fps = 1 / (time.time() - start_time)
     frame_count += 1
-    if not frame % 100:
+    if not frame_count % 100:
         filename = os.path.join(SAVE_FOLDER, f"capture_{frame_count}.jpg")
         cv2.imwrite(filename, frame)
         print("儲存圖片")
